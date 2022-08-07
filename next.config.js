@@ -1,9 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
 
 module.exports = {
-  basePath: "/blog",
-}
+  reactStrictMode: true,
+  swcMinify: true,
+  basePath: '/blog',
+  webpack: (config, { isServer }) => {
+    // Fixes npm packages that depend on `fs` module
+    if (!isServer) {
+      // eslint-disable-next-line no-param-reassign
+      config.node = {
+        fs: 'empty',
+      };
+    }
+
+    return config;
+  },
+};
