@@ -5,7 +5,7 @@ import { navLinks } from '../constants/navLinks';
 
 function NavBar() {
   return (
-    <div>
+    <div className='mb-40'>
       <div className="text-3xl mb-4">Nathen Smith</div>
       {navLinks.map((item) => {
         if (item.isExternal) {

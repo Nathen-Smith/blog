@@ -1,10 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { getSortedPostsData } from '../lib/posts'
 // import Image from 'next/image';
 
 import NavBar from '../components/Navbar';
 
-const Home: NextPage = () => (
+export default function Home({allPostsData}:any) {
+  return (
   <div>
     <Head>
       <title>Blog</title>
@@ -14,8 +16,19 @@ const Home: NextPage = () => (
 
     <main>
       <NavBar />
+      <ul>
+          {allPostsData.map(({ id, date, title }:any) => (
+            <li key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
 
-      <p>
+      {/* <p>
         Get started by editing
         {' '}
         <code>pages/index.tsx</code>
@@ -43,11 +56,19 @@ const Home: NextPage = () => (
             Instantly deploy your Next.js site to a public URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
 
-    <footer>footer</footer>
-  </div>
-);
+    {/* <footer>footer</footer> */}
+  </div>)
+};
 
-export default Home;
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
