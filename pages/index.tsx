@@ -4,7 +4,7 @@ import Link from 'next/link';
 import getSortedPostsData from '../lib/posts';
 // import Image from 'next/image';
 
-import NavBar from '../components/navbar';
+import NavBar from '../components/Navbar';
 import Date from '../components/date';
 
 export default function Home({ allPostsData }:any) {
