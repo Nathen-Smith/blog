@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Date from '../../components/date';
-import NavBar from '../../components/navbar';
+import NavBar from '../../components/Navbar';
 
 export default function Post({ postData } : any) {
   return (
