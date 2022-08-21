@@ -4,7 +4,7 @@ import Link from 'next/link';
 import getSortedPostsData from '../lib/posts';
 // import Image from 'next/image';
 
-import NavBar from '../components/Navbar';
+import NavBar from '../components/navbar';
 import Date from '../components/date';
 
 export default function Home({ allPostsData }:any) {
@@ -16,20 +16,23 @@ export default function Home({ allPostsData }:any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <NavBar />
-        <ul className="">
-          {allPostsData.map(({ id, date, title }:any) => (
-            <li key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <small className="bg-zinc-300">
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+      <main className="">
+        <div className="">
+
+          <NavBar />
+          <ul className="">
+            {allPostsData.map(({ id, date, title }:any) => (
+              <li key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <small className="bg-zinc-300">
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
+        </div>
       </main>
 
       {/* <footer>footer</footer> */}

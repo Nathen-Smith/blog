@@ -1,20 +1,29 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head';
+import Link from 'next/link';
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import Layout from '../../components/Layout';
 import Date from '../../components/date';
+import NavBar from '../../components/navbar';
 
 export default function Post({ postData } : any) {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <div className="text-3xl font-bold">
-        {postData.title}
+      <NavBar />
+      <div className="max-w-3xl mt-20 mx-auto">
+        <div className="text-3xl font-bold">
+          {postData.title}
+        </div>
+        <Date dateString={postData.date} />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className="mb-10" />
+        <Link href="/">
+          <a>← Back to home</a>
+        </Link>
       </div>
-      <Date dateString={postData.date} />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </Layout>
+
+    </div>
   );
 }
 

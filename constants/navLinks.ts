@@ -8,13 +8,23 @@ export interface NavLinksMeta extends Array<NavLinkMeta> {}
 
 export const navLinks: NavLinksMeta = [
   {
-    name: 'Index',
+    name: 'Home',
     to: '/',
     isExternal: false,
   },
   {
-    name: 'Blog',
-    to: '/list',
-    isExternal: false,
+    name: 'Portfolio',
+    to: 'https://nathensmith.com',
+    isExternal: true,
+  },
+  {
+    name: 'GitHub',
+    to: 'https://github.com/Nathen-Smith',
+    isExternal: true,
+  },
+  {
+    name: 'Contact',
+    to: 'mailto:nathencsmith@gmail.com',
+    isExternal: true,
   },
 ];
