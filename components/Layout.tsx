@@ -5,7 +5,7 @@ import styles from './layout.module.css';
 
 export const siteTitle = 'Next.js Sample Website';
 
-export default function Layout({ children, home }:any) {
+export default function Layout({ children, home }: any) {
   return (
     <div className={styles.container}>
       <Head>

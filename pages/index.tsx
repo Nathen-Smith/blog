@@ -7,7 +7,7 @@ import getSortedPostsData from '../lib/posts';
 import NavBar from '../components/Navbar';
 import Date from '../components/date';
 
-export default function Home({ allPostsData }:any) {
+export default function Home({ allPostsData }: any) {
   return (
     <div>
       <Head>
@@ -18,10 +18,9 @@ export default function Home({ allPostsData }:any) {
 
       <main className="">
         <div className="">
-
           <NavBar />
           <ul className="">
-            {allPostsData.map(({ id, date, title }:any) => (
+            {allPostsData.map(({ id, date, title }: any) => (
               <li key={id}>
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
