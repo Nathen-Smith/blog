@@ -5,9 +5,9 @@ import { navLinks } from '../constants/navLinks';
 
 function NavBar() {
   return (
-    <div className="max-w-3xl xl:max-w-7xl mx-auto">
-      <div className="block w-60 relative xl:absolute">
-        <div className="text-3xl mb-4">Nathen Smith</div>
+    <div className="max-w-3xl mx-auto">
+      <div className="block w-60">
+        <div className="text-3xl mb-4 font-semibold">Nathen Smith</div>
         {navLinks.map((item) => {
           if (item.isExternal) {
             return (

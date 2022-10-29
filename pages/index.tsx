@@ -5,7 +5,7 @@ import getSortedPostsData from '../lib/posts';
 // import Image from 'next/image';
 
 import NavBar from '../components/Navbar';
-import Date from '../components/date';
+import Date from '../components/Date';
 
 export default function Home({ allPostsData }: any) {
   return (
@@ -19,13 +19,13 @@ export default function Home({ allPostsData }: any) {
       <main className="">
         <div className="">
           <NavBar />
-          <ul className="">
+          <ul className="max-w-3xl mx-auto">
             {allPostsData.map(({ id, date, title }: any) => (
               <li key={id}>
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
                 </Link>
-                <small className="bg-zinc-300">
+                <small className="">
                   <Date dateString={date} />
                 </small>
               </li>
