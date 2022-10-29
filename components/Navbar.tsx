@@ -5,7 +5,7 @@ import { navLinks } from '../constants/navLinks';
 
 function NavBar() {
   return (
-    <div className="mt-20 xl:mr-10 -mr-6">
+    <div className="lg:mr-10 -mr-6">
       <div className="block w-60">
         <div className="text-3xl mb-4 font-semibold">Nathen Smith</div>
         {navLinks.map((item) => {

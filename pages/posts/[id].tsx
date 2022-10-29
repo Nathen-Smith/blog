@@ -3,26 +3,27 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Date from '../../components/Date';
-import NavBar from '../../components/Navbar';
+import HomeWrapper from '../../components/HomeWrapper';
 
 export default function Post({ postData }: any) {
   return (
-    <div className="px-4 lg:px-0">
+    <div>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <NavBar />
-      <div className="max-w-3xl mt-20 mx-auto">
-        <div className="text-3xl font-bold">{postData.title}</div>
-        <Date dateString={postData.date} />
-        <div
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-          className="mb-10"
-        />
-        <Link href="/">
-          <a>← Back to home</a>
-        </Link>
-      </div>
+      <HomeWrapper>
+        <div className="max-w-3xl mx-auto">
+          <div className="text-3xl font-bold">{postData.title}</div>
+          <Date dateString={postData.date} />
+          <div
+            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+            className="mb-10"
+          />
+          <Link href="/">
+            <a>← Back to home</a>
+          </Link>
+        </div>
+      </HomeWrapper>
     </div>
   );
 }
