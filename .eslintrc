@@ -10,13 +10,16 @@
     "prettier"
   ],
   "rules": {
-    "react/jsx-filename-extension": [ "warn", {"extensions": [".js", ".jsx", ".tsx", ".ts"]} ],
-      "import/extensions": [
-          0,
-          {
-              "ts": "never",
-              "tsx": "never"
-          }
-      ],
+    "react/jsx-filename-extension": [
+      "warn",
+      { "extensions": [".js", ".jsx", ".tsx", ".ts"] }
+    ],
+    "import/extensions": [
+      0,
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   }
 }

@@ -47,6 +47,6 @@
       "eslint --cache",
       "prettier --write --cache ."
     ],
-    "*.md": "prettier --write ."
+    "*.md": "prettier --write --cache ."
   }
 }
