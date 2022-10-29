@@ -16,7 +16,9 @@ a {
 }
 
 @layer base {
-  ul, ol, li {
+  ul,
+  ol,
+  li {
     list-style: revert;
     margin: revert;
     padding: revert;

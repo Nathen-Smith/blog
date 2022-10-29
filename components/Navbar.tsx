@@ -22,7 +22,9 @@ function NavBar() {
           }
           return (
             <Link href={item.to} key={item.name}>
-              <div className="font-semibold text-zinc-600 hover:text-black cursor-pointer">{item.name}</div>
+              <div className="font-semibold text-zinc-600 hover:text-black cursor-pointer">
+                {item.name}
+              </div>
             </Link>
           );
         })}
