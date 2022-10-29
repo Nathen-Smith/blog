@@ -16,21 +16,19 @@ export default function Home({ allPostsData }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        <div className="">
-          <NavBar />
-          <ul className="max-w-3xl mx-auto">
-            {allPostsData.map(({ id, date, title }: any) => (
-              <li key={id}>
-                <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
-                <small className="">
-                  <Date dateString={date} />
-                </small>
-              </li>
-            ))}
-          </ul>
+      <main className="lg:px-0 px-4 flex flex-col sm:flex-row max-w-5xl mx-auto">
+        <NavBar />
+        <div className="mt-20 space-y-2">
+          {allPostsData.map(({ id, date, title }: any) => (
+            <div key={id}>
+              <Link href={`/posts/${id}`}>
+                <a className="underline">{title}</a>
+              </Link>
+              <span className="pl-2">
+                <Date dateString={date} />
+              </span>
+            </div>
+          ))}
         </div>
       </main>
 
