@@ -3,7 +3,7 @@ title: 'The Landscape of the Human Mind'
 date: '2022-10-30'
 ---
 
-The toughest semester of my life was fall/winter 2020. I was taking Operating Systems and Data Structures and Algorithms, where people usually take the latter a semester before the former, not together. In order to de-stress, I loved watching cooking videos, so I really had nothing going on besides school and food. When reflecting on how that semester felt, the best way to describe it was that it was one long marathon—the days all merged into one.
+The toughest semester of my life was fall/winter 2020. I was entirely consumed by what is regarded as the toughest class at the university. In order to de-stress, I loved watching cooking videos, so I really had nothing going on besides school and food. When reflecting on how that semester felt, the best way to describe it was that it was one long marathon—the days all merged into one.
 
 I felt reborn going into winter break. Overwhelming clarity and feelings of being refreshed hit like waves as I left campus and got on the airplane for home. But what was I to do without needing to worry about school or cooking? Well, my mind decided for me. I had an enlightenment on the relation between the subconscious and the conscious.
 
