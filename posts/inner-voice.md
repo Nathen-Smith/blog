@@ -1,0 +1,19 @@
+---
+title: 'Awakening of the subconscious and inner voice'
+date: '2022-10-30'
+---
+
+The toughest semester of my life was fall/winter 2020. I was taking Operating Systems as well as Data Structures and Algorithms, where people usually take the latter a semester before the former, not together. In order to de-stress, I loved watching cooking videos so I really had nothing going on besides school and food. When reflecting on how that semester felt, the best way to describe it was that it was a long marathon—the days all merged into one.
+
+I felt reborn going into winter break. Overwhelming clarity and feelings of being refreshed hit like waves as I left campus and got on the airplane for home.
+But what was I to do without needing to worry about school or cooking? Well, my mind decided for me. I had an enlightenment on the relation between the subconscious and the conscious.
+
+> Quick definition: the conscious is everything reachable by your inner voice e.g. thoughts and awareness. The subconscious is everything else. I find the philosophy of samskara to define the subconcscious well, which will be a good further reading if you are interested.
+
+So what had I realized about the relation between the subconscious and the conscious? The subconscious was trying to send me messages. A whole semester flew by and I had given myself practically no time to think nor to listen. I had essentially suppressed my subconscious and it was gasping for air. I had no world outside school for a whole semester, and my subconscious was dying to tell me that I was not fulfilled and was losing touch with former hobbies. Similarly, I had neglected developing subconscious thoughts through my inner voice. Why was this important? As summarized in “You’re Not Listening” by Kate Murphy, listening to your inner voice helps with problem solving:
+
+> many great philosophers and social theorists, including William James, Charles Sanders Peirce, and George Herbert Mead, believed the self generated conversations with itself by taking the perspective of another. An example is an athlete who might internalize the voice of a coach. Or you might have a back-and-forth with yourself that resembles exchanges you've had with your mother, boss, spouse, sibling, friend, or maybe a therapist(p.129).
+
+When the inner dialogue is constructive and collaborative, it makes problem solving easy. The solution usually already resides in you, you just have to develop it. Or sometimes it's an irrational thought or you're overthinking. I am a big journaler, and just a glance at my Notes app will tell you how big of a role my inner voice plays in my decision making and problems. Here are my journal categories: ‘Career’, ‘Planning’, ‘Processing’, ‘Questions’, ‘Self Help’, ‘Struggles’, ‘Workout’, ‘Awakenings’, ‘Decision Making’, and ‘Brain Dump’. Whenever I get a bothersome feeling from the subconscious, I try to develop it out with the inner voice, resolve any problems, then categorize it. This has led to a kinder and more collaborative inner voice as well as a freedom from mind, which I believe is the key for happiness.
+
+Unfortunately for most people, their inner voice is unhelpful. As illustrated by Murphy, “an inner voice that says, Are you sure you want to do that? Why don’t you put yourself in their shoes? And Yeah, that was hurtful, but maybe they didn’t intend to hurt you, is a very different voice from the one that says, They are all out to get me and I’m no good. The latter voice is the one that makes you react in ways that are not to your benefit”(p.131). People take great lengths to shut out their inner voice, probably because it nags them or brings up trauma. But the longer the subconscious and inner voice are neglected, the louder they become. Cognitive Behavioral Therapy is a great solution for this.

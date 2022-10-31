@@ -17,7 +17,7 @@ export default function Post({ postData }: any) {
           <Date dateString={postData.date} />
           <div
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-            className="mb-10"
+            className="mb-10 prose prose-zinc"
           />
           <Link href="/">
             <a>← Back to home</a>
