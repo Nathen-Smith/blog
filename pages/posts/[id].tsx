@@ -15,6 +15,7 @@ export default function Post({ postData }: any) {
         <div className="max-w-3xl mx-auto">
           <div className="text-3xl font-bold">{postData.title}</div>
           <Date dateString={postData.date} />
+          <div className="h-4" />
           <div
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             className="mb-10 prose prose-zinc"

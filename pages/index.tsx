@@ -2,7 +2,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import getSortedPostsData from '../lib/posts';
-// import Image from 'next/image';
 
 import Date from '../components/Date';
 import HomeWrapper from '../components/HomeWrapper';
@@ -29,8 +28,6 @@ export default function Home({ allPostsData }: any) {
           ))}
         </div>
       </HomeWrapper>
-
-      {/* <footer>footer</footer> */}
     </div>
   );
 }
