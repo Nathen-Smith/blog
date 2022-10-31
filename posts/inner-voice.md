@@ -1,5 +1,5 @@
 ---
-title: 'The landscape of the human mind'
+title: 'The Landscape of the Human Mind'
 date: '2022-10-30'
 ---
 
