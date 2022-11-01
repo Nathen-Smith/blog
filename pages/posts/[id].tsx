@@ -21,8 +21,11 @@ export default function Post({ postData }: any) {
             className="mb-10 prose prose-zinc"
           />
           <Link href="/">
-            <a>← Back to home</a>
+            <a>
+              ←<span className="underline">Back to home</span>
+            </a>
           </Link>
+          <div className="h-20" />
         </div>
       </HomeWrapper>
     </div>
