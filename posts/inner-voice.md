@@ -1,6 +1,7 @@
 ---
 title: 'The Landscape of the Human Mind'
 date: '2022-10-30'
+description: "You've probably heard about the subconscious and the conscious, but do you understand how they interact? And what about the voluble inner voice, as dubbed by Kate Murphy?"
 ---
 
 The toughest semester of my life was fall/winter 2020. I was entirely consumed by what was regarded as the toughest class in my major. In my free time, I loved watching cooking videos, so I really had nothing going on besides school and food. When reflecting on how that semester felt, the best way to describe it was that it was one long marathon—the days all merged into one.

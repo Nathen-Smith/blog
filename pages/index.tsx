@@ -16,6 +16,7 @@ export default function Home({ allPostsData }: any) {
       </Head>
       <HomeWrapper>
         <div className="space-y-2">
+          <div className="text-4xl font-serif">Blog</div>
           {allPostsData.map(({ id, date, title }: any) => (
             <div key={id}>
               <Link href={`/posts/${id}`}>
