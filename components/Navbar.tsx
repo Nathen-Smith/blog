@@ -5,16 +5,16 @@ import { navLinks } from '../constants/navLinks';
 
 function NavBar() {
   return (
-    <div className="lg:mr-10 -mr-6">
-      <div className="block w-60">
-        <div className="text-3xl mb-4 font-semibold">Nathen Smith</div>
+    <div className="md:w-40">
+      <div className="text-4xl mb-4 font-serif">Nathen Smith</div>
+      <div className="space-y-2 font-semibold text-2xl">
         {navLinks.map((item) => {
           if (item.isExternal) {
             return (
               <a
                 href={item.to}
                 key={item.name}
-                className="font-semibold text-zinc-600 hover:text-black cursor-pointer block"
+                className="block text-zinc-600 sm:hover:text-black cursor-pointer"
               >
                 {item.name}
               </a>
@@ -22,7 +22,7 @@ function NavBar() {
           }
           return (
             <Link href={item.to} key={item.name}>
-              <div className="font-semibold text-zinc-600 hover:text-black cursor-pointer">
+              <div className="text-zinc-600 sm:hover:text-black cursor-pointer">
                 {item.name}
               </div>
             </Link>

@@ -10,10 +10,13 @@ export default function Post({ postData }: any) {
     <div>
       <Head>
         <title>{postData.title}</title>
+        {postData.description && (
+          <meta name="description" content={postData.description} />
+        )}
       </Head>
       <HomeWrapper>
-        <div className="max-w-3xl mx-auto">
-          <div className="text-3xl font-bold">{postData.title}</div>
+        <div>
+          <div className="text-4xl font-serif">{postData.title}</div>
           <Date dateString={postData.date} />
           <div className="h-4" />
           <div
