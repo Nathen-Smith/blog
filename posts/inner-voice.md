@@ -8,7 +8,7 @@ The toughest semester of my life was fall/winter 2020. I was entirely consumed b
 
 I felt reborn going into winter break. Overwhelming clarity and feelings of being refreshed hit like waves as I left campus and got on the airplane for home. But what was I to do without needing to worry about school or cooking? Lucky for me, my subconscious made plans. Having spent a whole semester practically giving no time to simply sit down and be with my thoughts, my subconscious was neglected and gasping for air. In particular, it was dying to tell me that I was not fulfilled and was losing touch with former hobbies.
 
-While my subconscious thoughts briefly surfaced in the form of the occasional shower thought, I still had given no time to the inner voice. Why was this important? For one, the inner voice impacts how you view yourself and hear others. In _You're Not Listening_ by Kate Murphy, Murphy illustrates the impact of the inner voice by contrasting two vastly different voices:
+While my subconscious thoughts briefly surfaced in the form of the occasional shower thought, I still had given no time to the inner voice. Why was this important? For one, the inner voice impacts how you view yourself and hear others. In _You're Not Listening_ by Kate Murphy, Murphy illustrates this by contrasting two voices:
 
 > An inner voice that says, Are you sure you want to do that? Why don’t you put yourself in their shoes? And Yeah, that was hurtful, but maybe they didn’t intend to hurt you, is a very different voice from the one that says, They are all out to get me and I’m no good. The latter voice is the one that makes you react in ways that are not to your benefit (Murphy 2020, 131)
 
