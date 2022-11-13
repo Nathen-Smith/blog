@@ -16,7 +16,7 @@ export default function Post({ postData }: any) {
       </Head>
       <HomeWrapper>
         <div>
-          <div className="text-4xl font-serif">{postData.title}</div>
+          <div className="text-4xl font-serif max-w-2xl">{postData.title}</div>
           <Date dateString={postData.date} />
           <div className="h-4" />
           <div
