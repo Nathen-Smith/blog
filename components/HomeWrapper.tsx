@@ -5,7 +5,7 @@ interface HomeWrapperProps {
 }
 export default function HomeWrapper({ children }: HomeWrapperProps) {
   return (
-    <div className="px-5 md:px-6 flex flex-col md:flex-row space-y-8 md:space-y-0 xl:space-x-12 md:space-x-4 space-x-0 max-w-5xl mx-auto mt-10 sm:mt-16 md:mt-20">
+    <div className="mx-auto mt-10 flex max-w-5xl flex-col space-y-8 space-x-0 px-5 sm:mt-16 md:mt-20 md:flex-row md:space-y-0 md:space-x-4 md:px-6 xl:space-x-12">
       <NavBar />
       {children}
     </div>
