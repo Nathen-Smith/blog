@@ -1,82 +1,65 @@
 /* eslint-disable */
 
-function ColorModeToggle({ isDark, toggle }: any) {
+import { useState } from 'react';
+
+function ColorModeToggle({ theme, dispatch }: any) {
+  const [isDark, setIsDark] = useState(theme === 'dark');
+  function toggle() {
+    if (isDark) {
+      dispatch('light');
+      setIsDark(false);
+    } else {
+      dispatch('dark');
+      setIsDark(true);
+    }
+  }
+
   return (
-    <button
-      onClick={toggle}
-      type="button"
-      aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
-      title={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
-      className="hover:opacity-100 focus:opacity-100"
-      style={{
-        opacity: 0.65,
-        position: `relative`,
-        borderRadius: `4px`,
-        width: `40px`,
-        height: `25px`,
-        display: `flex`,
-        alignItems: `center`,
-        justifyContent: `center`,
-        transition: `opacity 0.3s ease`,
-        border: `none`,
-        outline: `none`,
-        background: `none`,
-        cursor: `pointer`,
-        padding: 0,
-        appearance: `none`,
-      }}
-    >
-      <div
+    <div className="bg-blue-500">
+      <button
+        onClick={toggle}
+        type="button"
+        aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
+        title={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
+        className="hover:opacity-100 focus:opacity-100"
         style={{
+          opacity: 0.65,
           position: `relative`,
-          width: `24px`,
-          height: `24px`,
-          borderRadius: `50%`,
-          border: isDark ? `4px solid text-white` : `none`,
-          backgroundColor: isDark ? `toggleIcon` : `transparent`,
-          transform: isDark ? `scale(0.55)` : `scale(1)`,
-          transition: `all 0.45s ease`,
-          overflow: isDark ? `visible` : `hidden`,
-          boxShadow: isDark ? `none` : `inset 8px -8px 0px 0px text-white`,
-          // "&:before": {
-          //   content: `""`,
-          //   position: `absolute`,
-          //   right: `-9px`,
-          //   top: `-9px`,
-          //   height: `24px`,
-          //   width: `24px`,
-          //   border: (t) => (isDark ? `2px solid ${get(t, `colors.toggleIcon`)}` : `none`),
-          //   borderRadius: `50%`,
-          //   transform: isDark ? `translate(14px, -14px)` : `translate(0, 0)`,
-          //   opacity: isDark ? 0 : 1,
-          //   transition: `transform 0.45s ease`,
-          // },
-          // "&:after": {
-          //   content: `""`,
-          //   width: `8px`,
-          //   height: `8px`,
-          //   borderRadius: `50%`,
-          //   margin: `-4px 0 0 -4px`,
-          //   position: `absolute`,
-          //   top: `50%`,
-          //   left: `50%`,
-          //   boxShadow: (t) =>
-          //     `0 -23px 0 ${get(t, `colors.toggleIcon`)}, 0 23px 0 ${get(t, `colors.toggleIcon`)}, 23px 0 0 ${get(
-          //       t,
-          //       `colors.toggleIcon`
-          //     )}, -23px 0 0 ${get(t, `colors.toggleIcon`)}, 15px 15px 0 ${get(
-          //       t,
-          //       `colors.toggleIcon`
-          //     )}, -15px 15px 0 ${get(t, `colors.toggleIcon`)}, 15px -15px 0 ${get(
-          //       t,
-          //       `colors.toggleIcon`
-          //     )}, -15px -15px 0 ${get(t, `colors.toggleIcon`)}`,
-          //   transform: isDark ? `scale(1)` : `scale(0)`,
-          //   transition: `all 0.35s ease`,
-          // },
+          borderRadius: `4px`,
+          width: `40px`,
+          height: `25px`,
+          display: `flex`,
+          alignItems: `center`,
+          justifyContent: `center`,
+          transition: `opacity 0.3s ease`,
+          border: `none`,
+          outline: `none`,
+          background: `none`,
+          cursor: `pointer`,
+          padding: 0,
+          appearance: `none`,
         }}
-      />
-    </button>
+      >
+        <div
+          className={`
+        relative h-6 w-6 scale-100 overflow-hidden rounded-[50%] border-none 
+        bg-transparent shadow-[inset_8px_-8px_0px_0px_text-white] transition-all duration-[450ms] before:absolute 
+        before:right-[-9px] before:top-[-9px] before:h-6 before:w-6
+        before:translate-x-[14px] before:translate-y-[-14px]
+        before:rounded-[50%] before:border-none before:opacity-0 
+        before:transition-transform before:duration-[450ms] before:content-[""] after:absolute after:top-[50%] 
+        after:left-[50%] after:mt-[-4px] after:mr-0 
+        after:mb-0 after:ml-[-4px] after:h-2
+        after:w-2 after:scale-0 after:rounded-[50%]
+        after:shadow-[0_-23px_0_text-red-600,_0_23px_0_text-red-600,_23px_0_0_text-red-600,_-23px_0_0_text-red-600,_15px_15px_0_text-red-600,_-15px_15px_0_text-red-600,_15px_-15px_0_text-red-600,_-15px_-15px_0_text-red-600]
+        after:transition-all after:duration-[350ms] after:content-[""] dark:scale-[0.55] dark:overflow-visible 
+        dark:border-4 dark:border-solid dark:border-white dark:bg-white dark:shadow-none before:dark:translate-x-0 
+        before:dark:translate-y-0
+        before:dark:border-2 before:dark:border-solid before:dark:bg-opacity-100 after:dark:scale-100
+        `}
+        />
+      </button>
+    </div>
   );
 }
 

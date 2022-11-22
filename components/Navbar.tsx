@@ -2,9 +2,10 @@ import React, { useReducer } from 'react';
 import Link from 'next/link';
 
 import { navLinks } from '../constants/navLinks';
+import ColorModeToggle from './ColorModeToggle';
 
 function NavBar() {
-  function reducer(_: string, themeColor: string) {
+  function reducer(_: any, themeColor: 'light' | 'dark') {
     switch (themeColor) {
       case 'light':
         localStorage.theme = 'light';
@@ -31,6 +32,8 @@ function NavBar() {
       <button onClick={() => dispatch('dark')} type="button">
         Dark
       </button>
+
+      <ColorModeToggle theme={theme} dispatch={dispatch} />
 
       <div className="mb-4 font-serif text-4xl">Nathen Smith</div>
       <div className="space-y-2 text-2xl font-semibold">
