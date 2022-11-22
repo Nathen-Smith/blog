@@ -23,7 +23,7 @@ export default function Post({ postData }: any) {
           <div className="h-6" />
           <div
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-            className="prose prose-zinc mb-10"
+            className="prose prose-zinc mb-10 dark:prose-invert"
           />
           <Link href="/">
             <a>

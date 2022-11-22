@@ -7,8 +7,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     // initialization on reload
     if (isDarkMode()) {
+      localStorage.theme = 'dark';
       document.documentElement.classList.add('dark');
     } else {
+      localStorage.theme = 'dark';
       document.documentElement.classList.remove('dark');
     }
   }, []);
