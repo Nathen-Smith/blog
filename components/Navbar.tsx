@@ -3,14 +3,11 @@ import Link from 'next/link';
 
 import { navLinks } from '../constants/navLinks';
 import ColorModeToggle from './ColorModeToggle';
-import ConditionallyRender from './ConditionallyRender';
 
 function NavBar() {
   return (
     <div className="md:w-40">
-      <ConditionallyRender client>
-        <ColorModeToggle />
-      </ConditionallyRender>
+      <ColorModeToggle />
       <div className="mb-4 font-serif text-4xl">Nathen Smith</div>
       <div className="space-y-2 text-2xl font-semibold">
         {navLinks.map((item) => {

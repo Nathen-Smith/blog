@@ -1,7 +1,65 @@
 /* eslint-disable react-hooks/rules-of-hooks */
+
+'use client';
+
+import { useReducer } from 'react';
 import { MoonIcon } from '@heroicons/react/24/solid';
 import { SunIcon } from '@heroicons/react/24/outline';
-import useDarkMode from '../hooks/useDarkMode';
+
+function isDarkMode() {
+  return (
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  );
+}
+
+export function useDarkMode(): { isDark: boolean; toggle: () => void } {
+  if (typeof window === 'undefined') {
+    return { isDark: false, toggle: () => {} };
+  }
+  // client-side only code
+  function reducer(_: any, themeColor: 'light' | 'dark') {
+    switch (themeColor) {
+      case 'light':
+        localStorage.theme = 'light';
+        document.documentElement.classList.remove('dark');
+        return 'light';
+      case 'dark':
+        localStorage.theme = 'dark';
+        document.documentElement.classList.add('dark');
+        return 'dark';
+      default:
+        localStorage.removeItem('theme');
+        return 'dark';
+    }
+  }
+  const [theme, dispatch] = useReducer(
+    reducer,
+    isDarkMode() ? 'dark' : 'light',
+  );
+  // useEffect(() => {
+  //   // initialization on reload
+  //   if (isDarkMode()) {
+  //     localStorage.theme = 'dark';
+  //     document.documentElement.classList.add('dark');
+  //     dispatch('dark');
+  //   } else {
+  //     localStorage.theme = 'dark';
+  //     document.documentElement.classList.remove('dark');
+  //     dispatch('light');
+  //   }
+  // }, []);
+
+  function toggle() {
+    dispatch(theme === 'dark' ? 'light' : 'dark');
+  }
+
+  return {
+    isDark: theme === 'dark',
+    toggle,
+  };
+}
 
 export interface ColorModeToggleProps {
   lightColor?: string; // CSS color
@@ -11,14 +69,12 @@ export interface ColorModeToggleProps {
 function ColorModeToggle() {
   const { isDark, toggle } = useDarkMode();
 
-  const light = 'white';
-  const dark = 'black';
-
-  console.log(isDark);
+  // const light = 'white';
+  // const dark = 'black';
 
   return (
     <div className="">
-      <button
+      {/* <button
         onClick={toggle}
         type="button"
         aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
@@ -44,14 +100,14 @@ function ColorModeToggle() {
         before:dark:border-2 before:dark:border-solid before:dark:bg-opacity-100 after:dark:scale-100 
         `}
         />
-        {/* <div 
+        <div 
           className={`absolute h-3 w-2 rounded-lg bg-white shadow-[0_-23px_0_red,_0_23px_0_${light},_23px_0_0_${light},_-23px_0_0_${light},_15px_15px_0_${light},_-15px_15px_0_${light},_15px_-15px_0_${light},_-15px_-15px_0_${light}]
           `}
         />
         <div className="absolute h-8 w- align-center justify-center items-center">
           <div className="relative mx-auto bg-white h-2 w-1 rounded-lg" />
-        </div> */}
-      </button>
+        </div>
+      </button> */}
 
       <button
         onClick={toggle}

@@ -14,14 +14,20 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "types": ["node"]
+    "types": ["node"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "lib/posts.js",
-    "components/date.js"
+    "components/date.js",
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
