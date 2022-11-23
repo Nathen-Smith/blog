@@ -1,40 +1,16 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 import { navLinks } from '../constants/navLinks';
 import ColorModeToggle from './ColorModeToggle';
+import ConditionallyRender from './ConditionallyRender';
 
 function NavBar() {
-  function reducer(_: any, themeColor: 'light' | 'dark') {
-    switch (themeColor) {
-      case 'light':
-        localStorage.theme = 'light';
-        document.documentElement.classList.remove('dark');
-        return 'light';
-      case 'dark':
-        localStorage.theme = 'dark';
-        document.documentElement.classList.add('dark');
-        return 'dark';
-      default:
-        localStorage.removeItem('theme');
-        return 'dark';
-    }
-  }
-
-  // eslint-disable-next-line no-unused-vars
-  const [theme, dispatch] = useReducer(reducer, 'light');
-
   return (
     <div className="md:w-40">
-      <button onClick={() => dispatch('light')} type="button">
-        Light
-      </button>
-      <button onClick={() => dispatch('dark')} type="button">
-        Dark
-      </button>
-
-      <ColorModeToggle theme={theme} dispatch={dispatch} />
-
+      <ConditionallyRender client>
+        <ColorModeToggle />
+      </ConditionallyRender>
       <div className="mb-4 font-serif text-4xl">Nathen Smith</div>
       <div className="space-y-2 text-2xl font-semibold">
         {navLinks.map((item) => {
