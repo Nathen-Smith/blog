@@ -3,18 +3,11 @@ import { MoonIcon } from '@heroicons/react/24/solid';
 import { SunIcon } from '@heroicons/react/24/outline';
 import useDarkMode from '../hooks/useDarkMode';
 
-export interface ColorModeToggleProps {
-  lightColor?: string; // CSS color
-  darkColor?: string; // CSS color
-}
-
 function ColorModeToggle() {
   const { isDark, toggle } = useDarkMode();
 
   const light = 'white';
-  const dark = 'black';
-
-  console.log(isDark);
+  const dark = 'rgb(24 24 27)';
 
   return (
     <div className="">

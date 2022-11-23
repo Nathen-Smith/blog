@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useEffect, useReducer } from 'react';
+import { useReducer } from 'react';
 
-function isDarkMode() {
+export function isDarkMode() {
   return (
     localStorage.theme === 'dark' ||
     (!('theme' in localStorage) &&
@@ -32,23 +32,8 @@ export default function useDarkMode(): { isDark: boolean; toggle: () => void } {
 
   const [theme, dispatch] = useReducer(
     reducer,
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light',
+    isDarkMode() ? 'dark' : 'light',
   );
-  useEffect(() => {
-    // initialization on reload
-    if (isDarkMode()) {
-      localStorage.theme = 'dark';
-      document.documentElement.classList.add('dark');
-      dispatch('dark');
-    } else {
-      localStorage.theme = 'dark';
-      document.documentElement.classList.remove('dark');
-      dispatch('light');
-    }
-  }, []);
-
   function toggle() {
     dispatch(theme === 'dark' ? 'light' : 'dark');
   }

@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prelocal:static": "next build && next export",
+    "local:static": "serve ./out"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.4",
@@ -42,6 +44,7 @@
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
+    "serve": "^14.1.2",
     "tailwindcss": "^3.1.8",
     "typescript": "4.7.4"
   },
