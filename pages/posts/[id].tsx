@@ -15,18 +15,16 @@ export default function Post({ postData }: any) {
         )}
       </Head>
       <HomeWrapper>
-        <div>
-          <div className="mb-2 max-w-2xl font-serif text-4xl">
-            {postData.title}
-          </div>
+        <div className="prose prose-zinc dark:prose-invert">
+          <h1>{postData.title}</h1>
           <Date dateString={postData.date} />
-          <div className="h-6" />
+          <div className="h-4" />
           <div
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             className="prose prose-zinc mb-10 dark:prose-invert"
           />
           <Link href="/">
-            <a>
+            <a className="no-underline">
               ←<span className="underline">Back to home</span>
             </a>
           </Link>

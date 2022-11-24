@@ -14,6 +14,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
+    "daisyui": "^2.42.0",
     "date-fns": "^2.29.2",
     "gray-matter": "^4.0.3",
     "next": "12.2.4",

@@ -5,3 +5,11 @@
 html.dark {
   background-color: rgb(24 24 27); /* bg-zinc-900 */
 }
+
+.drawer-toggle ~ .drawer-side > .drawer-overlay {
+  background-color: rgb(24 24 27);
+}
+
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+  opacity: 0.4;
+}

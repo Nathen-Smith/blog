@@ -5,13 +5,9 @@ import useDarkMode from '../hooks/useDarkMode';
 
 function ColorModeToggle() {
   const { isDark, toggle } = useDarkMode();
-
-  const light = 'white';
-  const dark = 'rgb(24 24 27)';
-
   return (
-    <div className="">
-      <button
+    <div>
+      {/* <button
         onClick={toggle}
         type="button"
         aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
@@ -37,24 +33,24 @@ function ColorModeToggle() {
         before:dark:border-2 before:dark:border-solid before:dark:bg-opacity-100 after:dark:scale-100 
         `}
         />
-        {/* <div 
+        <div 
           className={`absolute h-3 w-2 rounded-lg bg-white shadow-[0_-23px_0_red,_0_23px_0_${light},_23px_0_0_${light},_-23px_0_0_${light},_15px_15px_0_${light},_-15px_15px_0_${light},_15px_-15px_0_${light},_-15px_-15px_0_${light}]
           `}
         />
         <div className="absolute h-8 w- align-center justify-center items-center">
           <div className="relative mx-auto bg-white h-2 w-1 rounded-lg" />
-        </div> */}
-      </button>
+        </div>
+      </button> */}
 
       <button
         onClick={toggle}
         type="button"
         aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
         title={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
-        className="flex h-8 w-8 items-center"
+        className="flex h-12 w-12 items-center"
       >
         {isDark ? (
-          <SunIcon className="h-8 w-8 text-white" />
+          <SunIcon className="mx-auto h-8 w-8 text-white" />
         ) : (
           <MoonIcon className="mx-auto h-7 w-7 text-zinc-900" />
         )}
