@@ -22,8 +22,8 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
   return (
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col bg-white dark:bg-zinc-900">
-        <div className="navbar mx-auto w-full max-w-7xl bg-zinc-100 pl-[14px] pr-1 transition-all duration-300 dark:bg-zinc-800 dark:text-white sm:bg-white sm:px-4 sm:dark:bg-zinc-900">
+      <div className="drawer-content flex flex-col bg-base-100 transition-colors duration-300 dark:bg-zinc-900">
+        <div className="navbar mx-auto w-full max-w-5xl bg-transparent pl-[14px] pr-1 dark:text-white sm:px-4 2xl:max-w-7xl 2xl:text-xl">
           <div className="flex-none sm:hidden">
             <label
               htmlFor="my-drawer"
@@ -64,11 +64,13 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
             </ConditionallyRender>
           </div>
         </div>
-        <div className="mx-auto px-[14px] pt-4 sm:px-4">{children}</div>
+        <div className="mx-auto px-[14px] pt-4 sm:px-4 2xl:pt-8">
+          {children}
+        </div>
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay" />
-        <ul className="prose prose-zinc flex w-60 flex-col bg-zinc-100 p-4 pt-8 text-xl font-bold dark:prose-invert dark:bg-zinc-800">
+        <ul className="prose prose-zinc flex w-48 flex-col bg-base-100 p-6 text-xl font-bold dark:prose-invert dark:bg-zinc-800">
           {navLinks.map((item) => {
             if (item.isExternal) {
               return (
