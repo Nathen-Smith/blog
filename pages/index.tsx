@@ -16,20 +16,22 @@ export default function Home({ allPostsData }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeWrapper>
-        <div className="prose prose-zinc space-y-2 dark:prose-invert">
+        <div className="prose prose-zinc dark:prose-invert">
           {/* below is very hacky */}
           <div className="w-full max-w-2xl sm:w-screen">
-            <h1 className="">Blog</h1>
-            {allPostsData.map(({ id, date, title }: any) => (
-              <div key={id}>
-                <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
-                <span className="pl-2">
-                  <Date dateString={date} />
-                </span>
-              </div>
-            ))}
+            <h1>Blog</h1>
+            <div className="space-y-4 sm:space-y-2">
+              {allPostsData.map(({ id, date, title }: any) => (
+                <div key={id}>
+                  <Link href={`/posts/${id}`}>
+                    <a>{title}</a>
+                  </Link>
+                  <span className="pl-2">
+                    <Date dateString={date} />
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </HomeWrapper>

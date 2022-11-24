@@ -77,7 +77,7 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay" />
-        <ul className="prose prose-zinc flex w-80 flex-col bg-zinc-100 p-4 pt-8 dark:prose-invert dark:bg-zinc-800">
+        <ul className="prose prose-zinc flex w-60 flex-col bg-zinc-100 p-4 pt-8 text-xl dark:prose-invert dark:bg-zinc-800">
           {navLinks.map((item) => {
             if (item.isExternal) {
               return (
