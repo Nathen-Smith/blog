@@ -7,10 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prelocal:static": "next build && next export",
+    "local:static": "serve ./out"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.6",
+    "@headlessui/react": "^1.7.4",
+    "@heroicons/react": "^2.0.13",
+    "daisyui": "^2.42.0",
     "date-fns": "^2.29.2",
     "gray-matter": "^4.0.3",
     "next": "12.2.4",
@@ -40,6 +44,8 @@
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "serve": "^14.1.2",
     "tailwindcss": "^3.1.8",
     "typescript": "4.7.4"
   },

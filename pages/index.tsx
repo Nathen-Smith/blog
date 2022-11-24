@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-script-component-in-head */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head';
 import Link from 'next/link';
@@ -15,18 +16,21 @@ export default function Home({ allPostsData }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeWrapper>
-        <div className="space-y-2">
-          <div className="text-4xl font-serif">Blog</div>
-          {allPostsData.map(({ id, date, title }: any) => (
-            <div key={id}>
-              <Link href={`/posts/${id}`}>
-                <a className="underline">{title}</a>
-              </Link>
-              <span className="pl-2">
-                <Date dateString={date} />
-              </span>
-            </div>
-          ))}
+        <div className="prose prose-zinc space-y-2 dark:prose-invert">
+          {/* below is very hacky */}
+          <div className="w-full max-w-2xl sm:w-screen">
+            <h1 className="">Blog</h1>
+            {allPostsData.map(({ id, date, title }: any) => (
+              <div key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <span className="pl-2">
+                  <Date dateString={date} />
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </HomeWrapper>
     </div>
