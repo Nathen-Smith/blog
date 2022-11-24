@@ -15,7 +15,7 @@ export default function Post({ postData }: any) {
         )}
       </Head>
       <HomeWrapper>
-        <div className="prose prose-zinc transition-all duration-300 dark:prose-invert 2xl:prose-xl">
+        <div className="prose prose-zinc transition-colors duration-300 dark:prose-invert 2xl:prose-xl">
           <h1>{postData.title}</h1>
           <Date dateString={postData.date} />
           <div className="h-4" />
