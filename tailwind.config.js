@@ -11,10 +11,20 @@ module.exports = {
     corePlugins: {
       preflight: false,
     },
-    extend: {},
+    extend: {
+      screens: {
+        '2xl': '1536px',
+      },
+    },
   },
   daisyui: {
-    themes: [],
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/colors/themes')['[data-theme=cupcake]'],
+        },
+      },
+    ],
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
 };
