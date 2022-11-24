@@ -25,12 +25,15 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
       <div className="drawer-content flex flex-col bg-white dark:bg-zinc-900">
         <div className="navbar mx-auto w-full max-w-7xl dark:text-white">
           <div className="flex-none sm:hidden">
-            <label htmlFor="my-drawer" className="btn btn-ghost btn-square">
+            <label
+              htmlFor="my-drawer"
+              className="flex h-12 w-12 cursor-pointer items-center"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block h-6 w-6 stroke-current"
+                className="mx-auto inline-block h-6 w-6 stroke-current"
               >
                 <path
                   strokeLinecap="round"
