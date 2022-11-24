@@ -18,13 +18,7 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: [
-      {
-        light: {
-          ...require('daisyui/src/colors/themes')['[data-theme=light]'],
-        },
-      },
-    ],
+    themes: [],
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
 };

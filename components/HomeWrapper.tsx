@@ -22,8 +22,8 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
   return (
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col bg-base-100 transition-colors duration-300 dark:bg-zinc-900">
-        <div className="navbar mx-auto w-full max-w-5xl bg-base-200 px-1 transition-colors duration-300 dark:bg-zinc-800 dark:text-white sm:bg-transparent sm:px-4 sm:pr-2 sm:dark:bg-transparent 2xl:max-w-7xl 2xl:text-xl">
+      <div className="drawer-content flex flex-col bg-white transition-colors duration-300 dark:bg-zinc-900">
+        <div className="navbar mx-auto w-full max-w-5xl bg-zinc-100 px-1 transition-colors duration-300 dark:bg-zinc-800 dark:text-white sm:bg-transparent sm:px-4 sm:pr-2 sm:dark:bg-transparent 2xl:max-w-7xl 2xl:text-xl">
           <div className="flex-none sm:hidden">
             <label
               htmlFor="my-drawer"
@@ -74,7 +74,7 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay" />
-        <ul className="prose prose-zinc flex w-48 flex-col bg-base-100 p-6 text-xl font-bold dark:prose-invert dark:bg-zinc-800">
+        <ul className="prose prose-zinc flex w-48 flex-col bg-zinc-100 p-6 text-xl font-bold dark:prose-invert dark:bg-zinc-800">
           {navLinks.map((item) => {
             if (item.isExternal) {
               return (
