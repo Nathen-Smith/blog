@@ -23,16 +23,20 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col bg-base-100 transition-colors duration-300 dark:bg-zinc-900">
-        <div className="navbar mx-auto w-full max-w-5xl bg-transparent pl-[14px] pr-1 dark:text-white sm:px-4 2xl:max-w-7xl 2xl:text-xl">
+        <div className="navbar mx-auto w-full max-w-5xl bg-base-200 px-1 transition-colors duration-300 dark:bg-zinc-800 dark:text-white sm:bg-transparent sm:px-4 sm:pr-2 sm:dark:bg-transparent 2xl:max-w-7xl 2xl:text-xl">
           <div className="flex-none sm:hidden">
             <label
               htmlFor="my-drawer"
               className="flex h-12 w-12 cursor-pointer items-center"
             >
-              <Bars3Icon className="h-7 w-7" />
+              <Bars3Icon className="mx-auto h-7 w-7" />
             </label>
           </div>
-          <div className="flex-1 sm:pl-2">{`Nathen's Blog`}</div>
+          <div className="ml-1 flex-1">
+            <Link href="/">
+              <a className="py-2">{`Nathen's Blog`}</a>
+            </Link>
+          </div>
           <div className="hidden flex-none sm:block">
             <ul className="flex items-center space-x-4">
               {navLinks.map((item) => {
