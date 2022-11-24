@@ -16,9 +16,9 @@ export default function Home({ allPostsData }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeWrapper>
-        <div className="prose prose-zinc dark:prose-invert">
+        <div className="prose prose-zinc transition-all duration-300 dark:prose-invert">
           {/* below is very hacky */}
-          <div className="w-full max-w-2xl sm:w-screen">
+          <div className="w-full max-w-2xl overflow-hidden sm:w-screen">
             <h1>Blog</h1>
             <div className="space-y-4 sm:space-y-2">
               {allPostsData.map(({ id, date, title }: any) => (

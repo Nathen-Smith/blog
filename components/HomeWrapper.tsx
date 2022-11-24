@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-// import NavBar from './Navbar';
 
 import Link from 'next/link';
 
+import { Bars3Icon } from '@heroicons/react/24/solid';
 import { navLinks } from '../constants/navLinks';
 import ColorModeToggle from './ColorModeToggle';
 import ConditionallyRender from './ConditionallyRender';
@@ -23,28 +23,16 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col bg-white dark:bg-zinc-900">
-        <div className="navbar mx-auto w-full max-w-7xl dark:text-white">
+        <div className="navbar mx-auto w-full max-w-7xl bg-zinc-100 pl-[14px] pr-1 transition-all duration-300 dark:bg-zinc-800 dark:text-white sm:bg-white sm:px-4 sm:dark:bg-zinc-900">
           <div className="flex-none sm:hidden">
             <label
               htmlFor="my-drawer"
               className="flex h-12 w-12 cursor-pointer items-center"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="mx-auto inline-block h-6 w-6 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <Bars3Icon className="h-7 w-7" />
             </label>
           </div>
-          <div className="mx-2 flex-1 px-2">{`Nathen's Blog`}</div>
+          <div className="flex-1 sm:pl-2">{`Nathen's Blog`}</div>
           <div className="hidden flex-none sm:block">
             <ul className="flex items-center space-x-4">
               {navLinks.map((item) => {
@@ -76,7 +64,7 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
             </ConditionallyRender>
           </div>
         </div>
-        <div className="mx-auto px-5">{children}</div>
+        <div className="mx-auto px-[14px] pt-4 sm:px-4">{children}</div>
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay" />
