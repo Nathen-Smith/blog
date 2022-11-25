@@ -1,5 +1,5 @@
 ---
-title: 'How to Attain Inner Peace / Philosophy on Happiness Pt.1'
+title: 'How to Attain Inner Peace / Philosophy on Happiness Pt.1: Awareness'
 date: '2022-11-12'
 description: 'When we say we want to be sustainably happy, what we really want is perpetual peace. In this guide, we will cover peace and ways to clear your mind'
 ---

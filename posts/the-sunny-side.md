@@ -1,7 +1,7 @@
 ---
 title: 'Philosophy on Happiness Pt.2: The Sunny Side'
 date: '2022-11-21'
-description: 'Life is full of ups and downs, and thinking about how tiny our existence is fills us with dread. What philosophies and mindsets should we adopt to live more positively?'
+description: 'It is not uncommon to be filled with existential dread after perceiving how small (and possibly unimportant) our existence could be. Questions like Am I doing enough? and Am I happy? only adds to these feelings. What philosophies and mindsets should we adopt to live more positively?'
 ---
 
 The point of Part 1 was to instill awareness by better defining the terms surrounding happiness. However, just settling for the harsh truth that we will never be 100% satisfied, happy, or at peace seems so dismal. And I don’t know about you, but I think a quest for philosophical truth doesn’t sound fun either (although it is important for developing our beliefs). Instead, I will prescribe the philosophy of Kurzgesagt, a German organization and animation and design studio with nearly 20 million subscribers on YouTube. It is called [optimistic nihilism](https://youtu.be/MBRqu0YOH14):
