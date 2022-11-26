@@ -1,36 +1,44 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import Link from 'next/link';
+/* eslint-disable jsx-a11y/label-has-associated-control */
 
-import { navLinks } from '../constants/navLinks';
+import Link from 'next/link';
+import { Bars3Icon } from '@heroicons/react/24/solid';
+
 import ColorModeToggle from './ColorModeToggle';
 import ConditionallyRender from './ConditionallyRender';
+import NavLinks from './NavLinks';
 
-function NavBar() {
+export default function NavBar() {
   return (
-    <div className="prose prose-zinc space-y-2 dark:prose-invert md:w-40">
-      <h1 className="">Nathen Smith</h1>
-      <div className="space-y-2">
-        {navLinks.map((item) => {
-          if (item.isExternal) {
-            return (
-              <a href={item.to} key={item.name} className="block">
-                {item.name}
-              </a>
-            );
-          }
-          return (
-            <Link href={item.to} key={item.name}>
-              <a>{item.name}</a>
-            </Link>
-          );
-        })}
+    <div className="navbar mx-auto w-full max-w-[65ch] bg-zinc-100 px-0 transition-colors duration-300 dark:bg-zinc-800 dark:text-white sm:bg-transparent sm:dark:bg-transparent">
+      <div className="flex-none sm:hidden">
+        <label
+          htmlFor="my-drawer"
+          className="flex h-12 w-12 cursor-pointer items-center"
+        >
+          <Bars3Icon className="mx-auto h-7 w-7" />
+        </label>
       </div>
-      <ConditionallyRender client>
-        <ColorModeToggle />
-      </ConditionallyRender>
+      <div className="flex-1">
+        <Link href="/">
+          <a className="py-2">{`Nathen's Blog`}</a>
+        </Link>
+      </div>
+      <div className="hidden flex-none sm:block">
+        <ul className="flex items-center space-x-4">
+          <NavLinks />
+          <li>
+            <ConditionallyRender client>
+              <ColorModeToggle />
+            </ConditionallyRender>
+          </li>
+        </ul>
+      </div>
+      <div className="block flex-none sm:hidden">
+        <ConditionallyRender client>
+          <ColorModeToggle />
+        </ConditionallyRender>
+      </div>
     </div>
   );
 }
-
-export default NavBar;
