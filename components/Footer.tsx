@@ -6,7 +6,7 @@ export default function Footer() {
           © 2022 by Nathen Smith. All rights reserved.
         </div>
         <a
-          className="float-right text-zinc-900 underline dark:text-white"
+          className="float-none text-zinc-900 underline dark:text-white sm:float-right"
           href="https://github.com/Nathen-Smith/blog"
         >
           Source code
