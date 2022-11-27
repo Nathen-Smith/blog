@@ -1,6 +1,6 @@
 ---
 title: 'Philosophy on Happiness Pt.2: The Sunny Side'
-date: '2022-11-21'
+date: '2022-11-26'
 description: 'It is not uncommon to be filled with existential dread after perceiving how small (and possibly unimportant) our existence could be. Questions like Am I doing enough? and Am I happy? only adds to these feelings. What philosophies and mindsets should we adopt to live more positively?'
 ---
 
