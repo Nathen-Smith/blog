@@ -11,11 +11,6 @@ module.exports = {
     corePlugins: {
       preflight: false,
     },
-    extend: {
-      screens: {
-        '2xl': '1536px',
-      },
-    },
   },
   daisyui: {
     themes: [],
