@@ -21,3 +21,9 @@ html.dark > * .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
 .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
   opacity: 0.4;
 }
+
+@media (min-width: 640px) {
+  .drawer-toggle ~ .drawer-side {
+    display: none;
+  }
+}
