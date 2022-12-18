@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Date from '../../components/Date';
 import HomeWrapper from '../../components/HomeWrapper';
+import Comments from '../../components/Comments';
 
 export default function Post({ postData }: any) {
   return (
@@ -25,6 +26,8 @@ export default function Post({ postData }: any) {
               ←<span className="underline">Back to home</span>
             </a>
           </Link>
+          <div className="h-20" />
+          <Comments />
           <div className="h-20" />
         </div>
       </HomeWrapper>
