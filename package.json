@@ -12,6 +12,7 @@
     "local:static": "serve ./out"
   },
   "dependencies": {
+    "@giscus/react": "^2.2.4",
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
     "daisyui": "^2.42.0",
