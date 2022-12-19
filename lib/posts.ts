@@ -18,7 +18,7 @@ export interface PostMetaData {
 export interface PostData extends PostMetaData {
   id: string;
   contentHtml: string;
-  estimatedTime?: number;
+  estimatedTime: number;
 }
 
 export interface SortedPostData extends PostMetaData {
