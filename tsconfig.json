@@ -16,12 +16,6 @@
     "incremental": true,
     "types": ["node"]
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "lib/posts.js",
-    "components/date.js"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/posts.ts"],
   "exclude": ["node_modules"]
 }

@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head';
 import Link from 'next/link';
-import { getAllPostIds, getPostData } from '../../lib/posts';
-import Date from '../../components/Date';
+import { getAllPostIds, getPostData, PostData } from '../../lib/posts';
+import PostSubHeader from '../../components/PostSubHeader';
 import HomeWrapper from '../../components/HomeWrapper';
 import Comments from '../../components/Comments';
 
-export default function Post({ postData }: any) {
+export default function Post({ postData }: { postData: PostData }) {
   return (
     <div>
       <Head>
@@ -18,7 +18,10 @@ export default function Post({ postData }: any) {
       <HomeWrapper>
         <div>
           <h1>{postData.title}</h1>
-          <Date dateString={postData.date} />
+          <PostSubHeader
+            dateString={postData.date}
+            estimatedTime={postData.estimatedTime}
+          />
           <div className="h-4" />
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           <Link href="/">
@@ -26,7 +29,7 @@ export default function Post({ postData }: any) {
               ←<span className="underline">Back to home</span>
             </a>
           </Link>
-          <div className="h-20" />
+          <div className="h-4 sm:h-8" />
           <Comments />
           <div className="h-20" />
         </div>

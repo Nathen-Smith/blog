@@ -7,7 +7,25 @@ import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export default function getSortedPostsData() {
+const WPM = 238;
+
+export interface PostMetaData {
+  title: string;
+  description: string;
+  date: string;
+}
+
+export interface PostData extends PostMetaData {
+  id: string;
+  contentHtml: string;
+  estimatedTime: number;
+}
+
+export interface SortedPostData extends PostMetaData {
+  id: string;
+}
+
+export default function getSortedPostsData(): Array<SortedPostData> {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -28,6 +46,7 @@ export default function getSortedPostsData() {
     };
   });
   // Sort posts by date
+  // @ts-ignore
   return allPostsData.sort(({ date: a }, { date: b }) => {
     if (a < b) {
       return 1;
@@ -62,7 +81,7 @@ export function getAllPostIds() {
   }));
 }
 
-export async function getPostData(id) {
+export async function getPostData(id: string): Promise<PostData> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -75,10 +94,15 @@ export async function getPostData(id) {
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
+  // Estimate the time it takes to read this post
+  const numWords = contentHtml.trim().split(/\s+/).length;
+  const estimatedTime = Math.ceil(numWords / WPM);
+
   // Combine the data with the id and contentHtml
   return {
     id,
     contentHtml,
+    estimatedTime,
     ...matterResult.data,
-  };
+  } as PostData;
 }

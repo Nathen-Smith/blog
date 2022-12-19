@@ -2,12 +2,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head';
 import Link from 'next/link';
-import getSortedPostsData from '../lib/posts';
+import getSortedPostsData, { SortedPostData } from '../lib/posts';
 
-import Date from '../components/Date';
+import PostSubHeader from '../components/PostSubHeader';
 import HomeWrapper from '../components/HomeWrapper';
 
-export default function Home({ allPostsData }: any) {
+export default function Home({
+  allPostsData,
+}: {
+  allPostsData: Array<SortedPostData>;
+}) {
   return (
     <div>
       <Head>
@@ -22,17 +26,16 @@ export default function Home({ allPostsData }: any) {
         <div>
           <h1>Blog</h1>
           <div className="space-y-4 sm:space-y-2">
-            {allPostsData.map(({ id, date, title }: any) => (
+            {allPostsData.map(({ id, date, title }) => (
               <div key={id}>
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
                 </Link>
                 <span className="pl-2">
-                  <Date dateString={date} />
+                  <PostSubHeader dateString={date} />
                 </span>
               </div>
             ))}
-            {/* </div> */}
           </div>
         </div>
       </HomeWrapper>
