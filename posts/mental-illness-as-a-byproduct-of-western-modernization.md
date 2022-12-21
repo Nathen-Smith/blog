@@ -4,7 +4,7 @@ date: '2022-12-20'
 description: 'Has mental illness increased as a result of modernization? What about modernization in America specifically, and why does Japan have a low rate of depression despite having many similarities to the US?'
 ---
 
-In primary care physician, Dr. Brandon Hidaka’s research paper, “Depression as a Disease of Modernity: Explanations for Increasing Prevalence”, Hidaka (2012) directly addresses two fundamental questions
+In primary care physician, Dr. Brandon Hidaka’s research paper, “Depression as a Disease of Modernity: Explanations for Increasing Prevalence”, Hidaka (2012) directly addresses two fundamental questions:
 
 1. Have depression rates increased as a result of modernization?
 2. If so, what are the exact reasons?
