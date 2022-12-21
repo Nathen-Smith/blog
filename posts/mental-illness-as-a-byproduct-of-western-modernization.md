@@ -1,5 +1,5 @@
 ---
-title: 'Depression as a Byproduct of Western Modernization'
+title: 'Mental Illness as a Byproduct of Western Modernization'
 date: '2022-12-20'
 description: 'Has depression increased as a result of modernization? What about modernization in America specifically, and why does Japan have a low rate of depression despite having many similarities to the US?'
 ---
