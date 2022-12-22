@@ -23,7 +23,8 @@ html.dark > * .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
 }
 
 .drawer-toggle ~ .drawer-content {
-  transition-property: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
 }
 
 @media (min-width: 640px) {
