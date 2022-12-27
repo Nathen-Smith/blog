@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en" className="bg-white transition-colors dark:bg-zinc-900">
+    <Html lang="en" className="transition-colors">
       <Head>
         <script
           dangerouslySetInnerHTML={{
