@@ -20,7 +20,7 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay" />
-        <ul className="prose prose-zinc flex w-48 flex-col bg-zinc-100 p-6 text-xl font-bold dark:prose-invert dark:bg-zinc-800">
+        <ul className="prose prose-zinc flex w-48 flex-col bg-white p-6 text-xl font-bold dark:prose-invert dark:bg-zinc-900">
           <NavLinks />
         </ul>
       </div>
