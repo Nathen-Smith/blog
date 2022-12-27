@@ -10,7 +10,7 @@ import NavLinks from './NavLinks';
 
 export default function NavBar() {
   return (
-    <div className="navbar mx-auto w-full max-w-[65ch] bg-white px-0 transition-colors duration-300 dark:bg-zinc-900 dark:text-white sm:bg-transparent sm:dark:bg-transparent">
+    <div className="navbar mx-auto w-full max-w-[65ch] px-0  transition-colors dark:text-white sm:bg-transparent sm:dark:bg-transparent">
       <div className="flex-none sm:hidden">
         <label
           htmlFor="my-drawer"

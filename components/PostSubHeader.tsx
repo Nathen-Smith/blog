@@ -8,7 +8,7 @@ interface DateProps {
 export default function PostTimeData({ dateString, estimatedTime }: DateProps) {
   const date = parseISO(dateString);
   return (
-    <span className="font-semibold text-zinc-600 dark:text-zinc-300">
+    <span className="font-semibold text-zinc-600 transition-colors dark:text-zinc-300">
       <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>
       {estimatedTime && <span>{` — ${estimatedTime} min read`}</span>}
     </span>
