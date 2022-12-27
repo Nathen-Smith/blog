@@ -10,6 +10,7 @@ export function isDarkMode() {
 }
 
 export default function useDarkMode(): { isDark: boolean; toggle: () => void } {
+  // stub for hydration mismatch
   if (typeof window === 'undefined') {
     return { isDark: false, toggle: () => {} };
   }
