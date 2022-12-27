@@ -17,7 +17,7 @@ export default function Document() {
           }}
         />
       </Head>
-      <body className="bg-zinc-100 transition-colors dark:bg-zinc-800 sm:bg-white sm:dark:bg-zinc-900">
+      <body>
         <Main />
         <NextScript />
       </body>
