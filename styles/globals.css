@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 html {
-  background-color: rgb(244 244 245); /* bg-zinc-100 */
+  background-color: white;
 }
-
 html.dark {
-  background-color: rgb(39 39 42); /* bg-zinc-800 */
+  background-color: rgb(24 24 27); /* bg-zinc-900 */
 }
 
 html.dark > * .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
