@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 html {
-  background-color: white;
+  background-color: rgb(244 244 245); /* bg-zinc-100 */
 }
 
 html.dark {
-  background-color: rgb(24 24 27); /* bg-zinc-900 */
+  background-color: rgb(39 39 42); /* bg-zinc-800 */
 }
 
 html.dark > * .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
@@ -30,5 +30,11 @@ html.dark > * .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
 @media (min-width: 640px) {
   .drawer-toggle ~ .drawer-side {
     display: none;
+  }
+  html {
+    background-color: white;
+  }
+  html.dark {
+    background-color: rgb(24 24 27); /* bg-zinc-900 */
   }
 }
