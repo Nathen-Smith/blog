@@ -20,10 +20,16 @@ export default function useDarkMode(): { isDark: boolean; toggle: () => void } {
       case 'light':
         localStorage.theme = 'light';
         document.documentElement.classList.remove('dark');
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute('content', 'white');
         return 'light';
       case 'dark':
         localStorage.theme = 'dark';
         document.documentElement.classList.add('dark');
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute('content', 'rgb(24 24 27)');
         return 'dark';
       default:
         localStorage.removeItem('theme');
