@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: rgb(244 244 245); /* bg-zinc-100 */
-}
-
-html.dark {
-  background-color: rgb(39 39 42); /* bg-zinc-800 */
-}
-
 html.dark > * .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
   opacity: 0.7;
 }
