@@ -4,6 +4,10 @@
 
 html {
   background-color: white;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 html.dark {
   background-color: rgb(24 24 27); /* bg-zinc-900 */
