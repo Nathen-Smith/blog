@@ -4,7 +4,7 @@ date: '2022-10-30'
 description: "You've probably heard about the subconscious and the conscious, but do you understand how they interact? And what about the voluble inner voice, as dubbed by Kate Murphy?"
 ---
 
-The most brutal semester of my life was the fall of 2020 when the most challenging course in my major consumed me. I loved watching cooking videos in my free time, so nothing was happening besides school and food. When reflecting on how that semester felt, the best way to describe it was that it was one long marathon—the days all merged into one.
+The most brutal semester of my life was the fall of 2020, when I was consumed by the most challenging course in my major. I loved watching cooking videos in my free time, so nothing was happening besides school and food. When reflecting on how that semester felt, the best way to describe it was that it was one long marathon—the days all merged into one.
 
 I felt reborn going into winter break. Overwhelming clarity and feelings of being refreshed hit like waves as I left campus and got on the airplane for home. But what was I to do without worrying about school or cooking? Lucky for me, my subconscious made plans. Having spent a whole semester practically giving me no time to sit down and be with my thoughts, I had neglected my subconscious so severely that it was gasping for air. In particular, it was dying to tell me that I was not fulfilled and was losing touch with my former hobbies.
 
