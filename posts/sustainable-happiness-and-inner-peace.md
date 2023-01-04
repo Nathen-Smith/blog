@@ -1,7 +1,7 @@
 ---
-title: 'Philosophy on Happiness Pt.1: Awareness and Inner Peace'
+title: 'Philosophy on Happiness Pt.1: A Journey, Not a Destination'
 date: '2022-11-12'
-description: 'When we say we want to be sustainably happy, we mean that we want perpetual peace. This guide will cover a philosophy on peace and ways to attain it.'
+description: 'Discover the insights and wisdom of the philosopher and author Naval Ravikant on the topic of happiness. Explore his philosophy on finding joy and fulfillment in life, and learn how to cultivate a sense of peace and contentment within yourself. Learn the importance of mental clarity and how it can improve your overall well-being. Discover the connection between meditation and journaling, and how they can work together to enhance your mental and emotional health.'
 ---
 
 Imagine a horizontal spectrum, rating people to their degree of indulgent behavior. On the far left side are the Buddhist monks, who live free of desires and pleasures of the world; they do not own any property, wear minimal clothing, are sexually abstinent, and consume just enough food not to die. On the far right side are hardcore drug addicts (likely unfortunate victims) living in oblivion. Now consider this: where on this spectrum are people the happiest?
