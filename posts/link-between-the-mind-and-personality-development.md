@@ -1,7 +1,7 @@
 ---
 title: 'The Landscape of the Human Mind'
 date: '2022-10-30'
-description: "You've probably heard about the subconscious and the conscious, but do you understand how they interact? And what about the voluble inner voice, as dubbed by Kate Murphy?"
+description: 'Explore the connection between your subconscious mind, inner voice, and personality. Learn how your inner dialogue shapes your thoughts and actions, and how you can use it to your advantage. Discover the power of the subconscious and how it influences your beliefs, behaviors, and overall well-being. Find out how to tap into your inner wisdom and improve your mental and emotional health.'
 ---
 
 The most brutal semester of my life was the fall of 2020 when I was consumed by the most challenging course in my major. I loved watching cooking videos in my free time, so nothing was happening besides school and food. When reflecting on how that semester felt, the best way to describe it was that it was one long marathon—the days all merged into one.
