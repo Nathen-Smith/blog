@@ -1,7 +1,7 @@
 ---
 title: 'Philosophy on Happiness Pt.2: The Sunny Side'
 date: '2022-11-26'
-description: 'In this blog post, we explore Kurzgesagt's philosophy on happiness and the importance of having a strong mindset. Discover how adopting a positive and resilient outlook on life can lead to greater fulfillment and satisfaction. Find out why it's important to focus on the things that truly matter and let go of negative thoughts and behaviors. Kurzgesagt's insights offer a refreshing and thought-provoking perspective on the pursuit of happiness.'
+description: ''
 ---
 
 The purpose of Part 1 was to instill awareness by better defining the terms surrounding happiness. However, settling for the harsh truth that we will never be 100% satisfied, happy, or at peace seems so dismal. And I don’t know about you, but I think a quest for philosophical truth doesn’t sound fun either (although it is essential for developing our beliefs). Instead, I will prescribe the philosophy of Kurzgesagt, a German organization and animation and design studio with nearly 20 million subscribers on YouTube. It is called [optimistic nihilism](https://youtu.be/MBRqu0YOH14):
