@@ -114,6 +114,28 @@ These findings indicate that as children are socialized in an interdependent cul
 
 ## Meanings in the Context of Depression
 
+It is tough to confirm that one particular view of the self is related to the risk of depression. For one, there are too many factors–we must consider ethnicity, sense of self, economic status, physical status, and family. Throughout an analysis of 19 different studies, Oyserman et al. (2002) also found that many variables are possibly confounding, decreasing the impact of results.
+
+However, the generally held belief is that collectivism (COL) protects against depression. This is at least the case for East Asian cultures: several studies show that “the positive association between stress and suppression on one hand and depression on the other is mitigated in those who are high in collectivism” (Cheung & Park, 2010; Lay et al., 1998; Su et al., 2013; as cited in Knyazev et al., 2017). Additionally, studies have shown that COL may lead to greater well-being for those living in an individualistic (IND) society:
+
+> COL positively correlated with psychological adjustment among European Americans but not among minority individuals or when levels of family support and acculturation were controlled (Ebreo, 1998). COL also moderated the relation between experiencing daily hassles and depression among Vietnamese Canadian adults (Lay et al., 1998, Study 4), again suggesting a potentially positive impact of COL on well-being among Americans (and Canadians) (Oyserman et al., 2002)
+
+> Well-being was negatively correlated with IND and positively correlated with COL for European Americans, but this relation disappeared when racial identity was controlled (Bettencourt & Dorr, 1997, Studies 1 and 2, as cited in Oyserman et al. 2002)
+
+Note the caveats in the evidence above; we can conclude that COL increases well-being only under certain conditions. Despite this trend, other studies have shown that the opposite is true. In a 2017 survey, Knyazev et al. (2017) found that "in Russia, in sharp contrast with collectivist East Asian cultures, IND rather than COL orientation may act as a protective factor for depression.” Russia is a mix of IND and COL, theoretically avoiding the bias of distress caused by a mismatch of sense of self between an individual and society. Oyserman et al. (2002) also list an example of where IND led to greater well-being for some:
+
+> Studies have found that the IND ideal of more control was associated with less depression for European Americans and African Americans, whereas, for Asians and Asian Americans, personal control was unrelated to depression. Congruently, in a sample of European and Asian Americans, anxiety and depression correlated negatively with independent self-construals and positively with interdependent self-construals (Okazaki, 1997, 2000, as cited in Oyserman et al. 2002)
+
+The results above suggest IND values benefit mental well-being, even for those with a somewhat COL background. However, this cohort may feel pressured to conform to IND ideals in an IND society; some may reject their parent’s COL values. Oyserman et al. (2002) confirm that there is greater happiness when someone living in an IND society satisfies IND ideals.
+
+As for the argument of COL reducing mental illness in East Asian cultures, it is necessary to consider how many COL countries, especially Korea and Japan, have an intense stigma against mental health. While Japan has a low prevalence of depression compared to West Europe and America (Hidaka, 2012; Kutty, 2022), it has a high suicide rate (Kutty, 2022). Furthermore, Japan has a low counseling usage rate: only 6% of people have used psychological counseling for mental health problems, compared to 52% in Europe and the US (Nishimura, 2022, as cited in Kutty, 2022). This factor makes it hard to validate the claims that COL protects against depression and increases happiness in COL societies.
+
+Because of the conflicting evidence, the number of variables, and potential undiagnosed cases due to mental health stigma, we cannot conclude that COL will benefit everyone. Nevertheless, a good approach is to view the two construals regarding their tradeoffs. Then, hopefully, the societies we live in will evolve to prioritize protecting against the development of depression.
+
+> Individualism fosters the pursuit of self-actualization but at the expense of social isolation (Triandis, 2001). On the other hand, collectivism provides social support and feelings of belonging but also brings anxiety about not meeting social obligations. (Knyazev et al. 2017)
+
+## Strengths of the Interdependent Construal
+
 Obviously, being easily angered and exhibiting it often is detrimental as it burdens others and decreases everyone's happiness, among other things. In an independent society, we may emphasize the importance of ego-centric emotions as a whole too heavily, thus inhibiting and diminishing our ability to understand and be receptive to other-focused emotions. We lose our ability to tend to others, to be sympathetic, and to really figure out what other people feel. In short, we become more robotic. While other factors like the rise of internet usage and competition contribute to it, a very independent view of the self may contribute to a decline in _truly_ listening: a trend that has been noted by Kate Murphy in _You’re not Listening_. When others truly listen to us by providing descriptive and evaluative feedback while avoiding misunderstandings, we feel human; this type of feedback is what Murphy calls the support response. On the other hand, let's say you were ranting to a friend, but they ignore understanding your feelings by prescribing help or changing the topic (the shift response). You have likely experienced this before, where someone completely missed the point of what you were talking about—it was a complete clash of brain wavelengths, and you got left feeling unsatisfied and unheard.
 
 As noted by Markus & Kitayama, the desire to set ourselves apart and promote or enhance ourselves whenever possible can result in a self-favorability bias. As shown above, we are most likely (hilariously) wrong about rating our skills with respect to the average, despite our favorability for ourselves. Consequently, especially for those with high self-esteem, the incessant need to self-promote can result in a pervasive self-serving bias. Those with a self-serving bias are stuck in a cycle of self-enhancement, reject the validity of negative feedback, and take more credit than what’s due when receiving positive feedback.
@@ -133,8 +155,12 @@ There are various traps and negative thinking patterns that arise from the self-
 ## References
 
 - Hidaka B. H. (2012). Depression as a Disease of Modernity: Explanations for Increasing Prevalence. _Journal of Affective Disorders_, 140(3), 205–214. https://doi.org/10.1016/j.jad.2011.12.036
+- Knyazev, G.G., Kuznetsova, V.B., Savostyanov, A.N., Dorosheva, E.A. (2017). Does collectivism act as a protective factor for depression
+  in Russia? _Personality and Individual Differences_, 108, 26–31. https://doi.org/10.1016/j.paid.2016.11.066
+- Kutty, Naoko (2022, October 17). Making mental health care accessible is challenging in Japan. _World Economic Forum_. https://www.weforum.org/agenda/2022/10/japans-challenges-in-making-mental-health-more-accessible/
+- Markus, H. R., & Kitayama, S. (1991). Culture and the Self: Implications for Cognition, Emotion, and Motivation. _Psychological Review_, 98(2), 224–253. https://doi.org/10.1037/0033-295X.98.2.224
+- Murphy, K. (2021). You’re Not Listening. Celadon Books.
+- Murray, H.A. (1938). Explorations in Personality. Oxford Univ. Press.
+- Oyserman, D., Coon, H. M., & Kemmelmeier, M. (2002). Rethinking Individualism and Collectivism: Evaluation of Theoretical Assumptions and Meta-Analyses. _Psychological bulletin_, 128(1), 3–72. https://doi.org/10.1037//0033-2909.128.1.3
 - Proudman, D., Greenberg, P., & Nellesen, D. (2021). The Growing Burden of Major Depressive Disorders (MDD): Implications for Researchers and Policy Makers. _PharmacoEconomics_, 39(6), 619–625. https://doi.org/10.1007/s40273-021-01040-7
 - Twenge, J. M., Gentile, B., DeWall, C. N., Ma, D., Lacefield, K., & Schurtz, D. R. (2010). Birth cohort increases in psychopathology among young Americans, 1938-2007: A cross-temporal meta-analysis of the MMPI. _Clinical Psychology Review_, 30(2), 145–154. https://doi.org/10.1016/j.cpr.2009.10.005
-- Markus, H. R., & Kitayama, S. (1991). Culture and the Self: Implications for Cognition, Emotion, and Motivation. _Psychological Review_, 98(2), 224–253. https://doi.org/10.1037/0033-295X.98.2.224
-- Murray, H.A. (1938). Explorations in Personality. Oxford Univ. Press.
-- Murphy, K. (2021). You’re Not Listening. Celadon Books.
