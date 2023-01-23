@@ -1,6 +1,6 @@
 ---
-title: 'IDK'
-date: '2022-12-20'
+title: 'Beyond the Independent Self: The Power of Interdependence'
+date: '2023-1-22'
 description: 'Has depression increased as a result of modernization? What about modernization in America specifically, and why does Japan have a low rate of depression despite having many similarities to the US?'
 ---
 

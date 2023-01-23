@@ -1,6 +1,6 @@
 ---
 title: 'Mental Illness as a Byproduct of Western Modernization'
-date: '2023-1-17'
+date: '2022-12-20'
 description: 'In this blog post, we examine the relationship between mental illness and modernization. We explore the causes of mental illness and how it can be seen as a byproduct of our fast-paced and individualistic society. We also delve into the differences between collectivism and individualism in the context of mental illness and discuss how cultural values can impact how we view and treat mental health. This post offers a nuanced and thought-provoking look at the complex factors contributing to mental illness.'
 ---
 
