@@ -1,6 +1,6 @@
 ---
 title: 'Beyond the Independent Self: The Power of Interdependence'
-date: '2023-1-22'
+date: '2023-01-22'
 description: 'Explore the negative consequences of an independent view of the self, including the prevalence of ego-centric emotions, the self-serving bias, and the tendency to compare oneself to others. Learn how an interdependent view of the self can lead to greater empathy, connection, and well-being.'
 ---
 
@@ -8,8 +8,8 @@ I was taken aback when I learned that collectivism might protect against the dev
 
 To get more background on the impacts of collectivism vs. individualism and how it changes the self, I read Professors Hazel Markus and Shinobu Kitayama’s paper, “Culture and the Self: Implications for Cognition, Emotion, and Motivation.” First, the professors define a problem in psychology in that most of what psychologists know about human nature is based on one particular view–the so-called Western view of the individual as an independent, self-contained, autonomous entity who:
 
-Comprises a unique configuration of internal attributes (e.g., traits, abilities, motives, and values)
-Behaves primarily as a consequence of these internal attributes (Geertz, 1975; Sampson, 1988,1989; Shweder & LeVine, 1984; as cited in Markus & Kitayama 1991, p.224).
+1. Comprises a unique configuration of internal attributes (e.g., traits, abilities, motives, and values)
+2. Behaves primarily as a consequence of these internal attributes (Geertz, 1975; Sampson, 1988,1989; Shweder & LeVine, 1984; as cited in Markus & Kitayama 1991, p.224).
 
 ## Two Construals of the Self: Independent and Interdependent
 
@@ -55,7 +55,8 @@ Murray (1938) assembled what he believed to be a comprehensive list of human mot
 - _Similance_: the need to imitate or emulate others, to agree and believe
 - _Affiliation_: the need to form friendships and associations
 - _Nurturance_: the need to nourish, aid, or protect another
-- _Succorance_: the need to seek aid, projection, or sympathy and to be dependent -_Avoidance of blame_: the need to avoid blame, ostracism, or punishment by inhibiting unconventional impulses and to be well behaved and obey the law
+- _Succorance_: the need to seek aid, projection, or sympathy and to be dependent
+- _Avoidance of Blame_: the need to avoid blame, ostracism, or punishment by inhibiting unconventional impulses and to be well behaved and obey the law
 - _Abasement_: the need to comply and accept punishment or self-deprecation
 
 In an interdependent culture, most of these motives are experienced as positive and desirable. However, in an independent culture, the motivations of _similance_ and _succorance_ are viewed as unfavorable since they defy the cultural need for independence–thus giving rise to _abasement_.
