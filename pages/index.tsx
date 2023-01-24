@@ -24,12 +24,12 @@ export default function Home({
       </Head>
       <HomeWrapper>
         <div>
-          <h1 className=" text-black dark:text-white">Blog</h1>
+          <h1 className="text-black dark:text-white">Blog</h1>
           <div className="space-y-4 sm:space-y-2">
             {allPostsData.map(({ id, date, title }) => (
               <div key={id}>
                 <Link href={`/posts/${id}`}>
-                  <a className=" text-black dark:text-white">{title}</a>
+                  <a className="text-black dark:text-white">{title}</a>
                 </Link>
                 <span className="pl-2">
                   <PostSubHeader dateString={date} />
