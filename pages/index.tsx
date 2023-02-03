@@ -16,13 +16,13 @@ interface PostCardProps {
 function PostCard({ id, title, estimatedTime, date }: PostCardProps) {
   return (
     <Link href={`/posts/${id}`}>
-      <div className="-mx-2 h-28 cursor-pointer p-2 transition-all dark:rounded-md dark:pt-2 sm:mx-0 sm:h-32 sm:rounded-lg sm:border sm:pt-4 sm:hover:scale-105 sm:hover:border-2 sm:hover:border-indigo-500 sm:dark:-mx-2 sm:dark:h-28 sm:dark:border-0 sm:dark:bg-zinc-900 sm:hover:dark:scale-100 sm:hover:dark:border-0 sm:hover:dark:bg-zinc-800">
+      <div className="-mx-2 h-28 cursor-pointer p-2 transition-all dark:rounded-md dark:pt-2 sm:mx-0 sm:h-32 sm:rounded-lg sm:border sm:pt-4 sm:dark:-mx-2 sm:dark:h-28 sm:dark:border-0 sm:dark:bg-zinc-900 md:hover:scale-105 md:hover:border-2 md:hover:border-indigo-500 md:hover:dark:scale-100 md:hover:dark:border-0 md:hover:dark:bg-zinc-800">
         <div className="flex items-start justify-between">
-          <div>
+          <div className="space-y-4">
             <div className="m-0 inline text-xl font-semibold text-black dark:text-white sm:w-3/4 lg:text-2xl">
               {title}
             </div>
-            <div className="mt-4 font-['SF_Compact_Text','SF_Pro_Text',-apple-system,BlinkMacSystemFont,'Inter','Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol'] text-sm font-medium uppercase text-zinc-600 dark:text-zinc-400">
+            <div className="font-['SF_Compact_Text','SF_Pro_Text',-apple-system,BlinkMacSystemFont,'Inter','Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol'] text-sm font-medium uppercase text-zinc-600 dark:text-zinc-400">
               <div className="inline">
                 <Date dateString={date} inline />
                 {` ∙ `}
