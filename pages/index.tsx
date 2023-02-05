@@ -16,7 +16,7 @@ interface PostCardProps {
 function PostCard({ id, title, estimatedTime, date }: PostCardProps) {
   return (
     <Link href={`/posts/${id}`}>
-      <div className="-mx-2 h-28 cursor-pointer p-2 transition-all dark:rounded-md dark:pt-2 sm:mx-0 sm:h-32 sm:rounded-lg sm:border sm:pt-4 sm:dark:-mx-2 sm:dark:h-28 sm:dark:border-0 sm:dark:bg-zinc-900 md:hover:scale-105 md:hover:border-2 md:hover:border-indigo-500 md:hover:dark:scale-100 md:hover:dark:border-0 md:hover:dark:bg-zinc-800">
+      <div className="-mx-2 h-32 cursor-pointer px-2 transition-all dark:rounded-md sm:mx-0 sm:rounded-lg sm:border sm:py-6 sm:pt-4 dark:sm:-mx-2 dark:sm:border-0 dark:sm:bg-zinc-900 dark:sm:py-4 lg:h-[9.5rem] lg:p-4 lg:hover:scale-105 lg:hover:border-2 lg:hover:border-indigo-500 dark:lg:h-32 dark:lg:p-2 dark:lg:hover:scale-100 dark:lg:hover:border-0 dark:lg:hover:bg-zinc-800 2xl:h-40 dark:2xl:h-[8.5rem]">
         <div className="flex items-start justify-between">
           <div className="space-y-4">
             <div className="m-0 inline text-xl font-semibold text-black dark:text-white sm:w-3/4 lg:text-2xl">
@@ -56,7 +56,7 @@ export default function Home({
           <h1 className="text-black dark:text-white">Blog</h1>
           <div className="grid grid-cols-1 divide-y divide-zinc-500 transition-colors dark:divide-zinc-700 sm:divide-y-0 sm:dark:divide-y">
             {allPostsData.map(({ id, date, title, estimatedTime }) => (
-              <div key={id} className="py-4 dark:py-4 sm:py-2">
+              <div key={id} className="py-6 sm:py-2 lg:dark:py-4">
                 <PostCard
                   id={id}
                   date={date}
