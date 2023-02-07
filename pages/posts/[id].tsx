@@ -1,12 +1,20 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head';
 import Link from 'next/link';
+import { serialize } from 'next-mdx-remote/serialize';
+
+import { MDXRemote } from 'next-mdx-remote';
 import { getAllPostIds, getPostData, PostData } from '../../lib/posts';
 import PostSubHeader from '../../components/PostSubHeader';
 import HomeWrapper from '../../components/HomeWrapper';
 import Comments from '../../components/Comments';
 
-export default function Post({ postData }: { postData: PostData }) {
+type SerializedPostData = Omit<PostData, 'contentMdx' | 'id'> & {
+  mdxSource: any;
+};
+
+export default function Post({ postData }: { postData: SerializedPostData }) {
   return (
     <div>
       <Head>
@@ -23,7 +31,7 @@ export default function Post({ postData }: { postData: PostData }) {
             estimatedTime={postData.estimatedTime}
           />
           <div className="h-4" />
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <MDXRemote {...postData.mdxSource} />
           <Link href="/">
             <a className="no-underline">
               ←<span className="underline">Back to home</span>
@@ -48,7 +56,18 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: any) {
   // Fetch necessary data for the blog post using params.id
-  const postData = await getPostData(params.id);
+  const { title, description, date, estimatedTime, contentMdx } =
+    await getPostData(params.id);
+  const mdxSource = await serialize(contentMdx);
+
+  const postData: SerializedPostData = {
+    title,
+    description,
+    date,
+    estimatedTime,
+    mdxSource,
+  };
+
   return {
     props: {
       postData,

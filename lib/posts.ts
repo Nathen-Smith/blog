@@ -3,65 +3,57 @@ import path from 'path';
 
 import matter from 'gray-matter';
 import { remark } from 'remark';
-import html from 'remark-html';
+import remarkMdx from 'remark-mdx';
 
-const postsDirectory = path.join(process.cwd(), 'posts');
-
+const POSTS_DIRECTORY = path.join(process.cwd(), 'posts');
 const WPM = 238;
 
-export interface PostMetaData {
+export interface PostData {
+  id: string;
   title: string;
   description: string;
   date: string;
-}
-
-export interface PostData extends PostMetaData {
-  id: string;
-  contentHtml: string;
   estimatedTime: number;
-}
-
-export interface SortedPostData extends PostMetaData {
-  id: string;
-  estimatedTime: number;
+  contentMdx: string;
 }
 
 export async function getPostData(id: string): Promise<PostData> {
-  const fullPath = path.join(postsDirectory, `${id}.md`);
+  const fullPath = path.join(POSTS_DIRECTORY, `${id}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
   const processedContent = await remark()
-    .use(html)
+    .use(remarkMdx)
     .process(matterResult.content);
-  const contentHtml = processedContent.toString();
+
+  const contentMdx = processedContent.toString();
 
   // Estimate the time it takes to read this post
-  const numWords = contentHtml.trim().split(/\s+/).length;
+  const numWords = contentMdx.trim().split(/\s+/).length;
   const estimatedTime = Math.ceil(numWords / WPM);
 
-  // Combine the data with the id and contentHtml
   return {
     id,
-    contentHtml,
+    contentMdx,
     estimatedTime,
-    ...matterResult.data,
+    ...matterResult.data, // title, description, date
   } as PostData;
 }
+
+export type SortedPostData = Omit<PostData, 'contentMdx'>;
 
 export default async function getSortedPostsData(): Promise<
   Array<SortedPostData>
 > {
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs.readdirSync(POSTS_DIRECTORY);
 
   const allPostsData = await Promise.all(
     fileNames.map(async (fileName) => {
-      // Remove ".md" from file name to get id
-      const id = fileName.replace(/\.md$/, '');
+      // Remove ".mdx" from file name to get id
+      const id = fileName.replace(/\.mdx$/, '');
 
       const { date, title, estimatedTime } = await getPostData(id);
 
@@ -88,7 +80,7 @@ export default async function getSortedPostsData(): Promise<
 }
 
 export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs.readdirSync(POSTS_DIRECTORY);
 
   // Returns an array that looks like this:
   // [
@@ -103,9 +95,10 @@ export function getAllPostIds() {
   //     }
   //   }
   // ]
+
   return fileNames.map((fileName) => ({
     params: {
-      id: fileName.replace(/\.md$/, ''),
+      id: fileName.replace(/\.mdx$/, ''),
     },
   }));
 }
