@@ -32,9 +32,7 @@ export default function Post({ postData }: { postData: SerializedPostData }) {
           />
 
           <div className="h-4" />
-          <div className="font-serif">
-            <MDXRemote {...postData.mdxSource} />
-          </div>
+          <MDXRemote {...postData.mdxSource} />
           <Link href="/">
             <a className="no-underline">
               ←<span className="underline">Back to home</span>
