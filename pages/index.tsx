@@ -4,8 +4,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import getSortedPostsData, { SortedPostData } from '../lib/posts';
 
-import SubHeaderDate from '../components/SubHeaderDate';
 import HomeWrapper from '../components/HomeWrapper';
+import SubHeader from '../components/SubHeader';
 
 interface PostCardProps {
   id: string;
@@ -22,13 +22,7 @@ function PostCard({ id, title, estimatedTime, date }: PostCardProps) {
             <div className="m-0 inline text-xl font-semibold text-black dark:text-white sm:w-3/4">
               {title}
             </div>
-            <div className="font-['SF_Compact_Text','SF_Pro_Text',-apple-system,BlinkMacSystemFont,'Inter','Segoe_UI',Roboto,Helvetica,Arial,sans-serif,'Apple_Color_Emoji','Segoe_UI_Emoji','Segoe_UI_Symbol'] text-sm font-medium uppercase text-zinc-600 dark:text-zinc-400">
-              <div className="inline">
-                <SubHeaderDate dateString={date} inline />
-                {` ∙ `}
-              </div>
-              {`${estimatedTime} MIN READ`}
-            </div>
+            <SubHeader date={date} estimatedTime={estimatedTime} />
           </div>
         </div>
       </div>
