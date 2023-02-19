@@ -6,9 +6,9 @@ import { serialize } from 'next-mdx-remote/serialize';
 
 import { MDXRemote } from 'next-mdx-remote';
 import { getAllPostIds, getPostData, PostData } from '../../lib/posts';
-import PostSubHeader from '../../components/PostSubHeader';
 import HomeWrapper from '../../components/HomeWrapper';
 import Comments from '../../components/Comments';
+import SubHeader from '../../components/SubHeader';
 
 type SerializedPostData = Omit<PostData, 'contentMdx' | 'id'> & {
   mdxSource: any;
@@ -26,12 +26,15 @@ export default function Post({ postData }: { postData: SerializedPostData }) {
       <HomeWrapper>
         <div>
           <h1>{postData.title}</h1>
-          <PostSubHeader
-            dateString={postData.date}
+          <SubHeader
+            date={postData.date}
             estimatedTime={postData.estimatedTime}
           />
+
           <div className="h-4" />
-          <MDXRemote {...postData.mdxSource} />
+          <div className="font-serif">
+            <MDXRemote {...postData.mdxSource} />
+          </div>
           <Link href="/">
             <a className="no-underline">
               ←<span className="underline">Back to home</span>
