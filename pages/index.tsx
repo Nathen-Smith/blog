@@ -50,7 +50,7 @@ export default function Home({
           <h1 className="text-black dark:text-white">Blog</h1>
           <div className="grid grid-cols-1 divide-y divide-zinc-500 transition-colors dark:divide-zinc-700 sm:divide-y-0 sm:dark:divide-y">
             {allPostsData.map(({ id, date, title, estimatedTime }) => (
-              <div key={id} className="py-6 sm:py-2 lg:dark:py-4">
+              <div key={id} className="pb-6 pt-5 sm:py-2 lg:dark:py-4">
                 <PostCard
                   id={id}
                   date={date}
