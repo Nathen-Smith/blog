@@ -1,20 +1,24 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { MoonIcon } from '@heroicons/react/24/solid';
 import { SunIcon } from '@heroicons/react/24/outline';
-import useDarkMode from '../hooks/useDarkMode';
+import { useContext } from 'react';
+import { ContactContext } from '../context/counter';
 
 function ColorModeToggle() {
-  const { isDark, toggle } = useDarkMode();
+  const [state, dispatch] = useContext(ContactContext);
+
   return (
     <div>
       <button
-        onClick={toggle}
+        onClick={() => {
+          dispatch({ type: state.isDark ? 'LIGHT' : 'DARK' });
+        }}
         type="button"
-        aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
-        title={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
+        aria-label={state.isDark ? `Activate Light Mode` : `Activate Dark Mode`}
+        title={state.isDark ? `Activate Light Mode` : `Activate Dark Mode`}
         className="flex h-12 w-12 items-center"
       >
-        {isDark ? (
+        {state.isDark ? (
           <SunIcon className="mx-auto h-8 w-8 text-white" />
         ) : (
           <MoonIcon className="mx-auto h-7 w-7 text-zinc-900" />
