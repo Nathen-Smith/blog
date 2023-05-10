@@ -4,14 +4,17 @@ import type { AppProps } from 'next/app';
 import { MDXProvider } from '@mdx-js/react';
 
 import Tweet from '../components/Tweet';
+import { ContactContextProvider } from '../context/counter';
 
 const components = { Tweet };
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <MDXProvider components={components}>
-      <Component {...pageProps} />
-    </MDXProvider>
+    <ContactContextProvider>
+      <MDXProvider components={components}>
+        <Component {...pageProps} />
+      </MDXProvider>
+    </ContactContextProvider>
   );
 }
 

@@ -5,16 +5,20 @@ import Link from 'next/link';
 import { serialize } from 'next-mdx-remote/serialize';
 
 import { MDXRemote } from 'next-mdx-remote';
+import { useContext } from 'react';
 import { getAllPostIds, getPostData, PostData } from '../../lib/posts';
 import HomeWrapper from '../../components/HomeWrapper';
 import Comments from '../../components/Comments';
 import SubHeader from '../../components/SubHeader';
+import { ContactContext } from '../../context/counter';
 
 type SerializedPostData = Omit<PostData, 'contentMdx' | 'id'> & {
   mdxSource: any;
 };
 
 export default function Post({ postData }: { postData: SerializedPostData }) {
+  const [state] = useContext(ContactContext);
+
   return (
     <div>
       <Head>
@@ -41,7 +45,7 @@ export default function Post({ postData }: { postData: SerializedPostData }) {
             </a>
           </Link>
           <div className="h-4 sm:h-8" />
-          <Comments />
+          <Comments isDark={state.isDark} />
           <div className="h-20" />
         </div>
       </HomeWrapper>
