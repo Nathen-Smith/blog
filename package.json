@@ -9,7 +9,8 @@
     "lint": "next lint",
     "prepare": "husky install",
     "prelocal:static": "next build && next export",
-    "local:static": "serve ./out"
+    "local:static": "serve ./out",
+    "format": "prettier --write --cache ."
   },
   "dependencies": {
     "@giscus/react": "^2.2.4",
