@@ -1,11 +1,12 @@
-import useDarkMode from '../hooks/useDarkMode';
-import useScript from '../hooks/useScript';
+import useDarkMode from '../../hooks/useDarkMode';
+import useScript from '../../hooks/useScript';
 
-interface RedditEmbedProps {
+interface RedditPostEmbedProps {
   url: string;
   title: string;
   author: string;
   subreddit: string;
+  height: number;
 }
 
 export default function RedditPost({
@@ -13,15 +14,16 @@ export default function RedditPost({
   title,
   author,
   subreddit,
-}: RedditEmbedProps) {
+  height,
+}: RedditPostEmbedProps) {
   const { isDark } = useDarkMode();
   useScript('https://embed.reddit.com/widgets.js');
 
   return (
     <blockquote
       className="reddit-embed-bq"
-      style={{ height: '316px' }}
-      data-embed-height="316"
+      style={{ height: `${height.toString()}px` }}
+      data-embed-height={height.toString()}
       data-embed-theme={isDark ? 'dark' : 'light'}
     >
       <a href={url}>{title}</a>

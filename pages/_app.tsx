@@ -2,14 +2,11 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { MDXProvider } from '@mdx-js/react';
-import dynamic from 'next/dynamic';
 
 import Tweet from '../components/Tweet';
+import { RedditPost, RedditComment } from '../components/Reddit';
 
-const RedditPost = dynamic(() => import('../components/RedditPost'), {
-  ssr: false,
-});
-const components = { Tweet, RedditPost };
+const components = { Tweet, RedditPost, RedditComment };
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
