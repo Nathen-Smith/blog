@@ -2,11 +2,13 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { Bars3Icon } from '@heroicons/react/24/solid';
-
-import ColorModeToggle from './ColorModeToggle';
-import ConditionallyRender from './ConditionallyRender';
 import NavLinks from './NavLinks';
+
+const ColorModeToggle = dynamic(() => import('./ColorModeToggle'), {
+  ssr: false,
+});
 
 export default function NavBar() {
   return (
@@ -28,16 +30,12 @@ export default function NavBar() {
         <ul className="flex items-center space-x-4">
           <NavLinks />
           <li>
-            <ConditionallyRender client>
-              <ColorModeToggle />
-            </ConditionallyRender>
+            <ColorModeToggle />
           </li>
         </ul>
       </div>
       <div className="block flex-none sm:hidden">
-        <ConditionallyRender client>
-          <ColorModeToggle />
-        </ConditionallyRender>
+        <ColorModeToggle />
       </div>
     </div>
   );
