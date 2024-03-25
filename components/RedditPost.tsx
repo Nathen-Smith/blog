@@ -25,9 +25,11 @@ export default function RedditPost({
       data-embed-theme={isDark ? 'dark' : 'light'}
     >
       <a href={url}>{title}</a>
-      <br /> by
+      <br />
+      by
       <a href={`https://www.reddit.com/user/${author}/`}>u/{author}</a>
-      in<a href={`https://www.reddit.com/r/${subreddit}/`}>{subreddit}</a>
+      in
+      <a href={`https://www.reddit.com/r/${subreddit}/`}>{subreddit}</a>
     </blockquote>
   );
 }
