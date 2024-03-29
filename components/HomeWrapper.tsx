@@ -11,7 +11,7 @@ export default function HomeWrapper({ children }: HomeWrapperProps) {
   return (
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col 2xl:text-lg">
+      <div className="drawer-content flex flex-col overflow-hidden 2xl:text-lg">
         <Navbar />
         <div className="prose prose-zinc mx-auto w-full max-w-[65ch] px-[14px] pt-8 dark:prose-invert sm:px-0 2xl:prose-lg">
           {children}
