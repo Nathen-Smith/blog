@@ -32,7 +32,8 @@ export async function getPostData(id: string): Promise<PostData> {
 
   // Estimate the time it takes to read this post
   const numWords = contentMdx.trim().split(/\s+/).length;
-  const estimatedTime = Math.ceil(numWords / WPM);
+  const wordAdjustment = matterResult.data.wordAdjustment ?? 0;
+  const estimatedTime = Math.ceil((numWords + wordAdjustment) / WPM);
 
   return {
     id,
